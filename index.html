@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Technical Documentation Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta name="description" content="A technical documentation" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- navigation bar -->
+        <nav id="navbar">
+            <header>
+                <h1>Web Design Documentation</h1>
+            </header>
+            <ul>
+                <li>
+                    <a href="#Introduction" class="nav-link">Introduction</a>
+                </li>
+                <li>
+                    <a href="#HTML_Basics" class="nav-link">HTML Basics</a>
+                </li>
+                <li>
+                    <a href="#CSS_Basics" class="nav-link">CSS Basics</a>
+                </li>
+                <li>
+                    <a href="#Different_Ways_to_Use_CSS" class="nav-link">Different Ways to Use CSS</a>
+                </li>
+                <li>
+                    <a href="#Other_Tools" class="nav-link">Other Tools</a>
+                </li>
+                <li>
+                    <a href="#Closing" class="nav-link">Closing</a>
+                </li>
+            </ul>
+        </nav>
+
+    <!-- main page content, cut into sections with articles-->
+        <main id="main-doc">
+
+            <section class="main-section" id="Introduction">
+                <header>
+                    <h1>Introduction</h1>
+                </header>
+                <article>
+                    <p>
+                        What is HTML? HTML stands for "HyperText Markup Language" and is used to build what you are
+                        looking
+                        at right now, a webpage. It is used with another language called Cascading Style Sheets, or CSS.
+                        Both of these languages are relatively easy to learn, and they are fun too!
+                    </p>
+                    <p>
+                        These languages have gone over a big range of development over the years, and it is ever
+                        changing.
+                        There have been so many suggested improvement or ideas that it could have gotten a little messy
+                        (and
+                        if not done correctly, it sometimes is). This is why a couple organizations have risen to set
+                        standards
+                        for web design, to keep things consistent for everyone.
+                    </p>
+                    <p>Two of these organizations are:</p>
+                    <ul>
+                        <li>
+                            <a href="https://www.w3.org/" target="_blank" title="W3C">World Wide Web Consortium</a>
+                        </li>
+                        <li>
+                            <a href="https://whatwg.org/" target="_blank" title="WHATWG">Web Hypertext Application
+                                Technology Working Group</a>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="main-section" id="HTML_Basics">
+                <header>
+                    <h1>HTML Basics</h1>
+                </header>
+                <article>
+                    <p>
+                        HTML is a really simple language. It consists of several pieces to make a whole page. These
+                        pieces
+                        are called elements. Elements have opening and closing "tags" that look like this:
+                    </p>
+                    <code>&lt;p&gt; &lt;/p&gt;</code>
+                    <p>
+                        Notice that the last tag has a slash before the type of element. That specific element was a
+                        paragraph element. There are several elements that are used in a webpage. You can find a list of
+                        them <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank"
+                            title="HTML Element List">here</a>. There are a few other things that need to be covered.
+                        Every
+                        page must be started with a "declaration," like this one:
+                    </p>
+                    <code>&lt;!DOCTYPE html&gt;</code>
+                    <p>
+                        The above code helps browsers render the html. There are other types of html to specify, but
+                        this is
+                        the universal way with the newest updated HTML5 version. All code (besides the declaration, it
+                        is
+                        always on top) should also be wrapped in an &nbsp;<code>&lt;html&gt;&lt;/html&gt;</code>&nbsp;
+                        tag.
+                        There
+                        should be a head element and a body element in between the html tags, with head being on top
+                        (opening and closing tags just like the other elements). The head tag is for elements that help
+                        with
+                        Search Engine Optimization, like meta tags. It is also used for displaying the title in the
+                        browser
+                        tab and linking the stylesheet. Some elements are self closing, meaning you don't need to put an
+                        end
+                        tag like the other elements. Some of these are:
+                    </p>
+                    <ul>
+                        <li><code>&lt;img&gt;</code></li>
+                        <li><code>&lt;meta&gt;</code></li>
+                        <li><code>&lt;link&gt;</code></li>
+                    </ul>
+                    <p>
+                        All you have to do is use the elements exactly how they are shown, with only one tag. HTML uses
+                        attributes to enhance certain element or provide sources (For example, links or links to images)
+                        to
+                        information. For image, the attributes needed are:
+                    </p>
+                    <code>&lt;img src="image.png" alt="an image" height="200" width="300"&gt;</code>
+                    <p>
+                        As you can see, the src attribute loads the image from the source file, the alt attribute helps
+                        with
+                        accessability (screen readers), and the height and width attributes help the page to load
+                        quicker by
+                        reserving space for the image. There are many attributes, and there is a list of them <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes" target="_blank"
+                            title="HTML Attribute List">here</a>.
+                    </p>
+                </article>
+            </section>
+
+            <section class="main-section" id="CSS_Basics">
+                <header>
+                    <h1>CSS Basics</h1>
+                </header>
+                <article>
+                    <p>
+                        CSS, or Cascading Style Sheets is a way to enhance HTML's simple structure, by adding color,
+                        changing an elements size, or even animating an element. Theres a lot to learn about this
+                        language,
+                        and a full documentation can be viewed <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"
+                            title="CSS Documentation">here</a>. Below is an example of CSS being used to
+                        change the background color of the &nbsp;<code>&lt;body&gt;</code>&nbsp; element.
+                    </p>
+                    <code>
+                    body {
+                        background-color: red;
+                    }
+                </code>
+                </article>
+            </section>
+
+            <section class="main-section" id="Different_Ways_to_Use_CSS">
+                <header>
+                    <h1>Different Ways to Use CSS</h1>
+                </header>
+                <article>
+                    <p>
+                        As stated in the above section, there are a few ways you can use CSS to enhance HTML.
+                    </p>
+                    <p>Some of these ways are:</p>
+                    <ul>
+                        <li>Changing element color</li>
+                        <li>Changing page layout</li>
+                        <li>Changing text font</li>
+                    </ul>
+                </article>
+                <p>Most of page design exists in the CSS, and it comes with very useful tools.</p>
+            </section>
+
+            <section class="main-section" id="Other_Tools">
+                <header>
+                    <h1>Other Tools</h1>
+                </header>
+                <p>
+                    Another well known way of enhancing web pages is by using JavaScript. JavaScript can use functions
+                    to
+                    make changes to a page real time on the client side, whn a user interacts with it. There is also
+                    extensions for css. SASS, or Syntactically Awesome Stylesheets, is a powerful language extension the
+                    improves the use of CSS. There is also bootstrap, a language framework that helps design websites.
+                </p>
+            </section>
+
+            <section class="main-section" id="Closing">
+                <header>
+                    <h1>Closing</h1>
+                </header>
+                <p>
+                    This is just a list of the very basic things you can do with HTML and CSS. There are many other
+                    things
+                    you can do, like animations. For more in depth teaching got to <a href="https://freecodecamp.org"
+                        target="_blank" title="FreeCodeCamp.org">FreeCodeCamp</a> or <a href="https://w3schools.com"
+                        target="_blank" title="W3Schools.com">W3Schools</a>.
+                </p>
+            </section>
+        </main>
+
+    <footer></footer>
+
+</body>
+
+</html>
